@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&amp;display=swap" rel="stylesheet">
+        <style>
+            html,
+            body {
+                font-family: Raleway;
+            }
+            #wrapper {
+                background-color: rgba(252, 252, 252, 0.562);
+                padding:21px;
+                text-transform: uppercase;
+                width:400px;
+            }
+            .container-fluid {
+                background-image: linear-gradient(to right, rgb(0, 183, 255) , rgb(255, 255, 109));
+            }
+            .input-group {
+                width:100%;
+            }
+            input {
+                background-color: rgba(243, 74, 102, 0.192) ;
+                border: none;
+                color: white;
+                margin-bottom: 15px;
+                padding: 9px;
+                width: calc(100% - 44px);
+            }
+
+            button {
+                border: none;
+                display:block;
+                letter-spacing: 1.5;
+                margin:0 auto;
+                margin-bottom:15px;
+                padding:9px;
+                text-transform: uppercase;
+                width:90%;
+            }
+            .col {
+                height:100vh;
+            }
+            h3 {
+                color:rgba(0, 183, 255, 0.555);
+                letter-spacing: 1.5;
+                margin-bottom:21px;
+                text-align: center;
+            }
+            input::placeholder {
+                color:white;
+            }
+            #forgot-password {
+                text-transform:capitalize;
+            }
+            #forgot-password span {
+                text-decoration:underline;
+            }
+            hr {
+                margin-bottom: 30px;
+                margin-top: 30px;
+            }
+            button:hover {
+                background-color: rgba(243, 74, 102, 0.192);
+            }
+            #register-button {
+                background-color:rgba(0, 183, 255, 0.37);
+            }
+            input,
+            .icon-wrapper {
+                height:44px;
+            }
+            .icon-wrapper {
+                align-items: center;
+                background-color: rgba(243, 74, 102, 0.329);
+                width: 44px;
+                display:flex;
+                justify-content: center;
+            }
+            .icon-wrapper i {
+                color:rgba(252, 252, 252, 0.692);
+                font-size: 21px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col d-flex align-items-center justify-content-center">
+                    <div id="wrapper">  
+                    <h3>Member Login</h3>
+                    <div class="input-group">
+                        <div class="icon-wrapper">
+                            <i class="fa fa-user-circle" aria-hidden="true"> </i>
+                        </div>
+                        <input placeholder="Username">
+                    </div>
+                    <div class="input-group">
+                        <div class="icon-wrapper">
+                            <i class="fa fa-lock" aria-hidden="true"> </i>
+                        </div>                   
+                        <input placeholder="Password">    
+                    </div>
+ 
+                    <button class="d-block"> Login </button>
+                    <p id="forgot-password">Forgot password? 
+                        <span>Click here</span>
+                    </p>
+                    <hr> 
+                    <button id="register-button">Register</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
